@@ -1,5 +1,5 @@
 import "./styles.css";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 export default function App() {
@@ -21,7 +21,7 @@ export default function App() {
   console.log(visisbleTodos);
   return (
     <div className="App">
-      <h1>TODO's</h1>
+      <h1>TODO's (pagination example)</h1>
       {visisbleTodos.map((todo) => (
         <p key={todo.id}>
           {todo.id}. {todo.title}
@@ -49,7 +49,7 @@ export default function App() {
           key={page}
           className={page === currentPage ? "active" : ""}
         >
-          {page} |
+          {page} | {'  '}
         </span>
       ))}
       <span
