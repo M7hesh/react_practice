@@ -1,5 +1,5 @@
 import "./styles.css";
-// import Pagination from "./Pagination";
+// import Pagination from "./Components/Pagination/Pagination";
 
 // RollDice
 import RollDice from "./Components/RollDice/RollDice";
